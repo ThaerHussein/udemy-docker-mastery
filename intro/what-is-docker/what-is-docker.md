@@ -10,9 +10,9 @@ Today, docker is lots of things. This lecture is focused on Docker's original th
 
 Docker was not the inventor of containers, but it made them easier to use with the three steps to creating and running them:
 
-1. Images: It aids you in packaging an application (with *all* its dependencies).
-2. Registries: It helps to distribute that app around to all the places you need to run it.
-3. Containers: It runs that app in a highly reproducible way.
+1. Images: It helps you in packaging an application (with *all* its dependencies). so let's talk a bit about this point, Docker allows you to create and use images. An image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and dependencies. In other words, it packages an application and all its dependencies into a single, portable container image. This solves the common problem of "it works on my machine" since the entire environment is encapsulated within the image. With Docker, developers can build these images, ensuring consistency across different environments and development stages.
+2. Registries: It helps to distribute that app around to all the places you need to run it. so this mean, Docker images can be stored in registries. A registry is a centralized location where you can store and distribute Docker images. Docker Hub is a popular public registry, but you can also set up private registries for your organization's use. Registries play a crucial role in the distribution of applications. Once an image is created, it can be pushed to a registry. From there, it can be pulled and run on any system that has Docker installed, making it incredibly easy to distribute applications across different servers and environments. Registries ensure that your application is readily available to be deployed wherever needed.
+3. Containers: It runs that app in a highly reproducible way. and this mean Containers are the runtime instances of Docker images. They provide a way to run applications in an isolated environment, ensuring that they have everything they need to run correctly
 
 Docker calls this the "Build, Ship and Run" lifecycle.
 
