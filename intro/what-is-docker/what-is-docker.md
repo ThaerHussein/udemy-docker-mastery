@@ -59,6 +59,23 @@ We’ll learn a lot more about these three innovations in this course, so for no
 
 > Nav: [Back to Intro Lectures](../README.md)
 
+Images:
+
+Docker containers start with images. An image is a read-only template containing instructions for creating a Docker container. It includes the application code, runtime, libraries, environment variables, and other configurations.
+Images can be built using a Dockerfile, which is a text file that contains instructions for building the image layer by layer.
+Images can be created from scratch or based on existing images available on Docker Hub or other container registries.
+
+Containerization:
+
+Once you have an image, you can create a container. A container is a runnable instance of an image.
+Containers run in isolation from the host system and other containers. They have their own file system, processes, and networking, but share the host system's kernel.
+Docker uses containerization technologies provided by the operating system (such as namespaces and cgroups in Linux) to create and manage containers.
+
+Docker Engine:
+
+Docker containers are managed by Docker Engine, which is a client-server application. The Docker Engine includes a server, which is a type of long-running program called a daemon process, and a REST API that specifies interfaces for interacting with the daemon process.
+Docker clients communicate with the Docker daemon using the Docker API, typically through the Docker CLI (Command-Line Interface) or other tools and libraries.
+The Docker daemon pulls the specified image from a container registry if it doesn't exist locally, creates a container based on that image, and runs the containerized application.
 ## Further reading
 
 - [Kubernetes vs. Docker (bretfisher.com)](https://www.bretfisher.com/kubernetes-vs-docker/)
